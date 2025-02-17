@@ -11,6 +11,9 @@
       crossorigin="anonymous"
     />
   </head>
+
+  <!-- Adding this comment just for the commit message -->
+
   <body>
     <div class="container">
         <div class="panel panel-default"></div>
