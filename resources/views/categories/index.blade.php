@@ -5,21 +5,25 @@
 @section('content')
 <div class="container">
     <h2 class="mb-4">Categories List</h2>
-    <table class="table table-bordered table-hover">
-        <thead class="thead-dark">
-            <tr>
-                <th>ID</th>
-                <th>Category Name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($categories as $category)
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover table-striped">
+            <thead class="thead-dark">
                 <tr>
-                    <td>{{ $category->id }}</td>
-                    <td>{{ $category->name }}</td>
+                    <th>ID</th>
+                    <th>Category Name</th>
+                    <th>Description</th>
                 </tr>
-            @endforeach
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach($categories as $category)
+                    <tr>
+                        <td>{{ $category->id }}</td>
+                        <td>{{ $category->name }}</td>
+                        <td>{{ $category->description }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
 </div>
 @endsection
